@@ -20,13 +20,7 @@
 <stop stop-color="#ababab" offset=".22"/>
 <stop stop-color="#757575" offset=".72"/>
 </linearGradient>
-<linearGradient id="gradient-dynamic-5" y2="1">
-<stop stop-color="#ffae00" offset=".22"/>
-<stop stop-color="#ac501b" offset=".72"/>
-</linearGradient>
 <linearGradient id="linearGradient5843" x1="-3.6508" x2="24.067" y1="-20.736" y2="6.9809" gradientTransform="scale(.97268 1.0281)" gradientUnits="userSpaceOnUse" xlink:href="#gradient-dynamic-1"/>
-<linearGradient id="linearGradient5857" x1="-12.566" x2="-6.9731" y1="8.0981" y2="13.691" gradientTransform="scale(1.0272 .97356)" gradientUnits="userSpaceOnUse" xlink:href="#gradient-dynamic-5"/>
-<linearGradient id="linearGradient5859" x1="3.7162" x2="9.3085" y1="-10.06" y2="-4.4675" gradientTransform="scale(1.0273 .97347)" gradientUnits="userSpaceOnUse" xlink:href="#gradient-dynamic-5"/>
 <linearGradient id="linearGradient5861" x1="-10.311" x2="17.407" y1="-20.736" y2="6.9809" gradientTransform="scale(.97268 1.0281)" gradientUnits="userSpaceOnUse" xlink:href="#gradient-dynamic-1"/>
 <linearGradient id="linearGradient1919" x1="-47.726" x2="-41.278" y1="-15.874" y2="-15.874" gradientUnits="userSpaceOnUse">
 <stop stop-color="#b0b0b0" offset="0"/>
