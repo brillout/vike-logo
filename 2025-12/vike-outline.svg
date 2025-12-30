@@ -1,8 +1,14 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" class="hammer" style="height:100%;width:100%;touch-action:none" viewBox="-50 -50 100 100">
     <defs>
-        <filter id="outline-right" width="300%" height="300%" x="-1" y="-1">
+        <!-- Combined 4-direction outline filter -->
+        <filter id="outline-all" width="300%" height="300%" x="-1" y="-1">
             <feDropShadow dx="1" dy="0" flood-color="#000" flood-opacity="1" stdDeviation="0"/>
+            <feDropShadow dx="-1" dy="0" flood-color="#000" flood-opacity="1" stdDeviation="0"/>
+            <feDropShadow dx="0" dy="-1" flood-color="#000" flood-opacity="1" stdDeviation="0"/>
+            <feDropShadow dx="0" dy="1" flood-color="#000" flood-opacity="1" stdDeviation="0"/>
         </filter>
+
+        <!-- Gradients -->
         <linearGradient id="gradient-dynamic-0" x1="0" x2="1" y1="0" y2="1" gradientUnits="objectBoundingBox">
             <stop offset="22%" stop-color="#bababa"/>
             <stop offset="72%" stop-color="#929090"/>
@@ -60,7 +66,10 @@
             <stop offset="72%" stop-color="#949494"/>
         </linearGradient>
     </defs>
-    <g filter="url(#outline-right)" transform="rotate(0,0,0)">
+
+    <!-- Hammer with all 4-direction outlines -->
+    <g filter="url(#outline-all)" transform="rotate(0,0,0)">
+        <!-- All your original hammer paths go here -->
         <path fill="#7d7d7d" stroke-linecap="round" stroke-linejoin="round" d="M-4.868,-10.713 L-4.5,-8.202 L-2.832,-9.263 Z"/>
         <path fill="#a3a3a3" stroke-linecap="round" stroke-linejoin="round" d="M5.836,-22.026 L-4.868,-10.713 L-2.832,-9.263 L7.871,-20.577 Z"/>
         <path fill="#a3a3a3" stroke-linecap="round" stroke-linejoin="round" d="M12.019,6.435 L9.984,7.884 L-5.236,-8.202 L-3.2,-9.652 Z"/>
@@ -68,29 +77,29 @@
         <path fill="#dedede" stroke-linecap="round" stroke-linejoin="round" d="M5.836,-22.026 L8.579,-22.026 L7.871,-20.577 Z"/>
         <path fill="#d6d6d6" stroke-linecap="round" stroke-linejoin="round" d="M12.726,7.884 L10.719,7.884 L12.209,6.824 Z"/>
         <path fill="#a3a3a3" stroke-linecap="round" stroke-linejoin="round" d="M7.843,-22.026 L7.325,-20.966 L22.913,-4.49 L23.43,-5.551 Z"/>
-        <path stroke="url(&quot;#gradient-dynamic-13&quot;)" stroke-width="8.7" d="M-9.366,9.899 L-11.172,11.809 "/>
-        <path fill="url(&quot;#gradient-dynamic-13&quot;)" stroke="url(&quot;#gradient-dynamic-13&quot;)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M-12.419,11.809 C-13.868,10.277 -14.449,9.086 -13.748,9.086 C-13.046,9.086 -11.374,10.277 -9.925,11.809 C-8.476,13.34 -7.895,14.531 -8.596,14.531 C-9.298,14.531 -10.97,13.34 -12.419,11.809 "/>
-        <path fill="url(&quot;#gradient-dynamic-13&quot;)" stroke="url(&quot;#gradient-dynamic-13&quot;)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M-10.613,9.899 C-9.164,11.431 -7.492,12.622 -6.79,12.622 C-6.089,12.622 -6.67,11.431 -8.119,9.899 C-9.567,8.368 -11.24,7.177 -11.941,7.177 C-12.643,7.177 -12.062,8.368 -10.613,9.899 "/>
+        <path stroke="url(#gradient-dynamic-13)" stroke-width="8.7" d="M-9.366,9.899 L-11.172,11.809 "/>
+        <path fill="url(#gradient-dynamic-13)" stroke="url(#gradient-dynamic-13)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M-12.419,11.809 C-13.868,10.277 -14.449,9.086 -13.748,9.086 C-13.046,9.086 -11.374,10.277 -9.925,11.809 C-8.476,13.34 -7.895,14.531 -8.596,14.531 C-9.298,14.531 -10.97,13.34 -12.419,11.809 "/>
+        <path fill="url(#gradient-dynamic-13)" stroke="url(#gradient-dynamic-13)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M-10.613,9.899 C-9.164,11.431 -7.492,12.622 -6.79,12.622 C-6.089,12.622 -6.67,11.431 -8.119,9.899 C-9.567,8.368 -11.24,7.177 -11.941,7.177 C-12.643,7.177 -12.062,8.368 -10.613,9.899 "/>
         <path fill="#d6d6d6" stroke-linecap="round" stroke-linejoin="round" d="M23.43,-3.429 L12.726,7.884 L12.209,6.824 L22.913,-4.49 Z"/>
         <path fill="#a3a3a3" stroke-linecap="round" stroke-linejoin="round" d="M-10.051,-10.713 L-4.868,-10.713 L-4.868,-8.591 L-10.051,-8.591 Z"/>
         <path fill="#a3a3a3" stroke-linecap="round" stroke-linejoin="round" d="M-10.051,-10.713 L-4.868,-10.713 L5.836,-22.026 L0.653,-22.026 Z"/>
-        <path stroke="url(&quot;#gradient-dynamic-12&quot;)" stroke-width="7.7" d="M7.024,-7.425 L-9.031,9.546 "/>
-        <path fill="url(&quot;#gradient-dynamic-12&quot;)" stroke-linecap="round" stroke-linejoin="round" d="M-10.278,9.546 C-11.727,8.015 -12.308,6.824 -11.607,6.824 C-10.905,6.824 -9.233,8.015 -7.784,9.546 C-6.335,11.077 -5.754,12.268 -6.456,12.268 C-7.157,12.268 -8.83,11.077 -10.278,9.546 "/>
-        <path fill="url(&quot;#gradient-dynamic-12&quot;)" stroke-linecap="round" stroke-linejoin="round" d="M5.777,-7.425 C7.226,-5.893 8.898,-4.702 9.6,-4.702 C10.301,-4.702 9.72,-5.893 8.271,-7.425 C6.823,-8.956 5.15,-10.147 4.449,-10.147 C3.747,-10.147 4.328,-8.956 5.777,-7.425 "/>
+        <path stroke="url(#gradient-dynamic-12)" stroke-width="7.7" d="M7.024,-7.425 L-9.031,9.546 "/>
+        <path fill="url(#gradient-dynamic-12)" stroke-linecap="round" stroke-linejoin="round" d="M-10.278,9.546 C-11.727,8.015 -12.308,6.824 -11.607,6.824 C-10.905,6.824 -9.233,8.015 -7.784,9.546 C-6.335,11.077 -5.754,12.268 -6.456,12.268 C-7.157,12.268 -8.83,11.077 -10.278,9.546 "/>
+        <path fill="url(#gradient-dynamic-12)" stroke-linecap="round" stroke-linejoin="round" d="M5.777,-7.425 C7.226,-5.893 8.898,-4.702 9.6,-4.702 C10.301,-4.702 9.72,-5.893 8.271,-7.425 C6.823,-8.956 5.15,-10.147 4.449,-10.147 C3.747,-10.147 4.328,-8.956 5.777,-7.425 "/>
         <path fill="#a3a3a3" stroke-linecap="round" stroke-linejoin="round" d="M10.352,7.495 L5.169,7.495 L-10.051,-8.591 L-4.868,-8.591 Z"/>
         <path fill="#dcdbdb" stroke-linecap="round" stroke-linejoin="round" d="M0.653,-22.026 L5.836,-22.026 L8.579,-22.026 L3.396,-22.026 Z"/>
         <path fill="#a3a3a3" stroke-linecap="round" stroke-linejoin="round" d="M12.726,7.884 L7.544,7.884 L5.537,7.884 L10.719,7.884 Z"/>
-        <path fill="url(&quot;#gradient-dynamic-7&quot;)" stroke-linecap="round" stroke-linejoin="round" d="M23.43,-6.329 L18.247,-6.329 L3.028,-22.415 L8.211,-22.415 Z"/>
+        <path fill="url(#gradient-dynamic-7)" stroke-linecap="round" stroke-linejoin="round" d="M23.43,-6.329 L18.247,-6.329 L3.028,-22.415 L8.211,-22.415 Z"/>
         <path fill="#ababab" stroke-linecap="round" stroke-linejoin="round" d="M12.726,7.884 L7.544,7.884 L18.247,-3.429 L23.43,-3.429 Z"/>
         <path fill="#d6d6d6" stroke-linecap="round" stroke-linejoin="round" d="M-10.051,-10.713 L-10.051,-8.591 L-9.533,-9.652 Z"/>
         <path fill="#dcdbdb" stroke-linecap="round" stroke-linejoin="round" d="M23.43,-3.429 L18.247,-3.429 L18.247,-6.329 L23.43,-6.329 Z"/>
         <path fill="#d6d6d6" stroke-linecap="round" stroke-linejoin="round" d="M0.653,-22.026 L-10.051,-10.713 L-9.533,-9.652 L1.171,-20.966 Z"/>
-        <path fill="url(&quot;#gradient-dynamic-11&quot;)" stroke-linecap="round" stroke-linejoin="round" d="M-9.711,-9.652 L-10.051,-8.591 L5.169,7.495 L5.508,6.435 Z"/>
+        <path fill="url(#gradient-dynamic-11)" stroke-linecap="round" stroke-linejoin="round" d="M-9.711,-9.652 L-10.051,-8.591 L5.169,7.495 L5.508,6.435 Z"/>
         <path fill="#dedede" stroke-linecap="round" stroke-linejoin="round" d="M0.653,-22.026 L3.028,-22.415 L0.993,-20.966 Z"/>
         <path fill="#7d7d7d" stroke-linecap="round" stroke-linejoin="round" d="M7.544,7.884 L5.169,7.495 L5.508,6.435 Z"/>
-        <path fill="url(&quot;#gradient-dynamic-8&quot;)" stroke-linecap="round" stroke-linejoin="round" d="M0.993,-20.966 L-9.711,-9.652 L5.508,6.435 L16.212,-4.879 Z"/>
-        <path fill="url(&quot;#gradient-dynamic-9&quot;)" stroke="url(&quot;#gradient-dynamic-9&quot;)" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.6" d="M4.657,-10.799 L2.83,-8.862 L-0.97,-13.668 L-0.971,-13.667 L-1.04,-13.758 L-1.349,-13.847 L-1.433,-13.784 L-1.399,-13.537 L1.518,-4.09 L1.716,-3.863 L1.931,-3.653 L3.741,-5.607 L7.542,-0.802 L7.542,-0.804 L7.611,-0.712 L7.92,-0.623 L8.004,-0.686 L7.97,-0.933 L5.136,-10.681 L4.938,-10.908 Z"/>
-        <path fill="url(&quot;#gradient-dynamic-10&quot;)" stroke-linecap="round" stroke-linejoin="round" d="M18.247,-6.329 L16.212,-4.879 L0.993,-20.966 L3.028,-22.415 Z"/>
+        <path fill="url(#gradient-dynamic-8)" stroke-linecap="round" stroke-linejoin="round" d="M0.993,-20.966 L-9.711,-9.652 L5.508,6.435 L16.212,-4.879 Z"/>
+        <path fill="url(#gradient-dynamic-9)" stroke="url(#gradient-dynamic-9)" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.6" d="M4.657,-10.799 L2.83,-8.862 L-0.97,-13.668 L-0.971,-13.667 L-1.04,-13.758 L-1.349,-13.847 L-1.433,-13.784 L-1.399,-13.537 L1.518,-4.09 L1.716,-3.863 L1.931,-3.653 L3.741,-5.607 L7.542,-0.802 L7.542,-0.804 L7.611,-0.712 L7.92,-0.623 L8.004,-0.686 L7.97,-0.933 L5.136,-10.681 L4.938,-10.908 Z"/>
+        <path fill="url(#gradient-dynamic-10)" stroke-linecap="round" stroke-linejoin="round" d="M18.247,-6.329 L16.212,-4.879 L0.993,-20.966 L3.028,-22.415 Z"/>
         <path fill="#a3a3a3" stroke-linecap="round" stroke-linejoin="round" d="M18.247,-3.429 L7.544,7.884 L5.508,6.435 L16.212,-4.879 Z"/>
         <path fill="#dedede" stroke-linecap="round" stroke-linejoin="round" d="M18.247,-3.429 L18.247,-6.329 L16.212,-4.879 Z"/>
     </g>
