@@ -1,0 +1,14 @@
+<svg height="25" version="1.1" viewBox="0 0 92.585 36.57" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<filter id="innerShadow" x="-.018768" y="-.051064" width="1.0454" height="1.1234">
+<feOffset dx="1" dy="1" in="SourceAlpha" result="offset"/>
+<feGaussianBlur in="offset" result="blur" stdDeviation="1"/>
+<feComposite in="blur" in2="SourceAlpha" k2="-0.5" k3="0.5" operator="arithmetic" result="innerShadow"/>
+<feMerge>
+<feMergeNode in="SourceGraphic"/>
+<feMergeNode in="innerShadow"/>
+</feMerge>
+</filter>
+</defs>
+<text transform="matrix(.69261 0 0 .69261 -1.1574e-6 -1.1095e-6)" x="67.212502" y="48.775002" fill="#ffffff" filter="url(#innerShadow)" font-family="Futura, Arial, sans-serif" font-size="64px" font-weight="700" stroke-width="1.4438" text-anchor="middle">Vike</text>
+</svg>
