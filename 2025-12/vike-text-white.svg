@@ -1,10 +1,10 @@
 <svg height="25" version="1.1" viewBox="0 0 92.585 36.57" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <filter id="innerShadow" x="-.018768" y="-.051064" width="1.0454" height="1.1234">
-      <!-- stronger shadow -->
-      <feOffset dx="1.5" dy="1.5" in="SourceAlpha" result="offset"/>
-      <feGaussianBlur in="offset" result="blur" stdDeviation="1.2"/>
-      <feComposite in="blur" in2="SourceAlpha" k2="-0.6" k3="0.6" operator="arithmetic" result="innerShadow"/>
+      <!-- stronger inner shadow -->
+      <feOffset dx="2" dy="2" in="SourceAlpha" result="offset"/>
+      <feGaussianBlur in="offset" result="blur" stdDeviation="1.5"/>
+      <feComposite in="blur" in2="SourceAlpha" k2="-0.7" k3="0.7" operator="arithmetic" result="innerShadow"/>
       <feMerge>
         <feMergeNode in="SourceGraphic"/>
         <feMergeNode in="innerShadow"/>
