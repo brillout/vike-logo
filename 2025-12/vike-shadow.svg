@@ -1,7 +1,26 @@
 <svg class="hammer" width="50" height="50" version="1.1" viewBox="-50 -50 50 50" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <defs>
-<filter id="shadow" width="300%" height="300%" x="-1" y="-1">
-<feDropShadow dx="4" dy="3" flood-color="#e3e3e3" flood-opacity="1" stdDeviation="2"/>
+<filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+  <!-- Extract alpha channel -->
+  <feColorMatrix in="SourceAlpha" type="matrix"
+    values="0 0 0 0 0
+            0 0 0 0 0
+            0 0 0 0 0
+            0 0 0 1 0" result="alpha"/>
+
+  <!-- Apply blur and offset to alpha -->
+  <feGaussianBlur in="alpha" stdDeviation="2" result="blur"/>
+  <feOffset in="blur" dx="4" dy="3" result="offsetBlur"/>
+
+  <!-- Color the shadow -->
+  <feFlood flood-color="#e3e3e3" flood-opacity="1" result="shadowColor"/>
+  <feComposite in="shadowColor" in2="offsetBlur" operator="in" result="coloredShadow"/>
+
+  <!-- Merge shadow with original content -->
+  <feMerge>
+    <feMergeNode in="coloredShadow"/>
+    <feMergeNode in="SourceGraphic"/>
+  </feMerge>
 </filter>
 <linearGradient id="gradient-dynamic-14" x1="2.6887" x2="20.805" y1="-25.244" y2="-7.1277" gradientTransform="scale(1.1262 .88795)" gradientUnits="userSpaceOnUse">
 <stop stop-color="#cfcfcf" offset=".22"/>
