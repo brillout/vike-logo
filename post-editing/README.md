@@ -1,3 +1,3 @@
 - To avoid gradient breaking upon SVG ungrouping, use vike-generated-head.svg instead of vike-generated.svg
 - To re-assemble hammer handle from scratch, use SVG union fix described at https://chatgpt.com/c/6910f1b0-88ac-8328-8274-53a089e1dd6a
-- To generate dark variant, run `$ node ~/code/vike-land/darken-svg.js vike.svg vike-dark.svg`
+- To generate dark variant, run `$ node ~/code/vike-land/darken-svg.js vike.svg vike-dark.svg` (repeat to further darken)
