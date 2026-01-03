@@ -1,12 +1,8 @@
-<svg class="hammer" width="38" height="38" version="1.1" viewBox="-50 -50 38 38" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg class="hammer" width="50" height="50" version="1.1" viewBox="-50 -50 50 50" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <defs>
 <filter id="shadow" width="300%" height="300%" x="-1" y="-1">
 <feDropShadow dx="4" dy="3" flood-color="#e3e3e3" flood-opacity="1" stdDeviation="2"/>
 </filter>
-<linearGradient id="gradient-dynamic-9" x1="-2.0338" x2="9.7455" y1="-12.055" y2="-.27523" gradientTransform="scale(.85209 1.1736)" gradientUnits="userSpaceOnUse">
-<stop stop-color="#ff0" offset=".35"/>
-<stop stop-color="#ffc300" offset=".8"/>
-</linearGradient>
 <linearGradient id="linearGradient1919" x1="-47.726" x2="-41.278" y1="-15.874" y2="-15.874" gradientUnits="userSpaceOnUse">
 <stop stop-color="#d0d0d0" offset=".17481"/>
 <stop stop-color="#9b9b9b" offset=".79316"/>
@@ -31,13 +27,14 @@
 <stop stop-color="#d6d6d6" offset=".22"/>
 <stop stop-color="#b5b5b5" offset=".72"/>
 </linearGradient>
-<linearGradient id="linearGradient1541" x1="-2.0338" x2="9.7455" y1="-12.055" y2="-.27523" gradientTransform="scale(.85209 1.1736)" gradientUnits="userSpaceOnUse" xlink:href="#gradient-dynamic-9"/>
+<linearGradient id="linearGradient1541" x1="-2.0338" x2="9.7455" y1="-12.055" y2="-.27523" gradientTransform="scale(.85209 1.1736)" gradientUnits="userSpaceOnUse">
+<stop stop-color="#ff0" offset=".35"/>
+<stop stop-color="#ffc300" offset=".8"/>
+</linearGradient>
 <linearGradient id="linearGradient1545" x1="1.0011" x2="18.396" y1="-22.234" y2="-4.8396" gradientTransform="scale(.99193 1.0081)" gradientUnits="userSpaceOnUse">
 <stop stop-color="#e0e0e0" offset=".22"/>
 <stop stop-color="#ccc" offset=".72"/>
 </linearGradient>
-
-<!-- Define the hammer group without any filter -->
 <g id="hammer-content" transform="translate(.22809 .35167)">
 <g transform="translate(-.27466 -2.165)">
 <path d="m-44.502-15.874-2.141 2.263" color="#000000" stroke-width="8.4" style="-inkscape-stroke:none"/>
@@ -45,7 +42,7 @@
 <path d="m-47.552-18.761-2.0918 2.2129c-0.11703 0.09395-0.19017 0.23829-0.21094 0.36914-0.04347 0.2739 0.0455 0.51012 0.17969 0.78516 0.26837 0.55008 0.79218 1.242 1.5312 2.0234 0.73955 0.7814 1.5324 1.475 2.2422 1.9805 0.7098 0.50545 1.287 0.85156 1.8359 0.85156 0.13718 0 0.28337-0.02985 0.41016-0.12305 0.04036-0.02967 0.07523-0.06617 0.10547-0.10547l2.0996-2.2207z" color="#000000" fill="url(#linearGradient347-5)" style="-inkscape-stroke:none"/>
 <path d="m-30.339-36.445-16.697 17.648c-0.3593 0.23612 0.24229 1.3233 1.5215 2.6758 1.449 1.531 3.1222 2.7207 3.8242 2.7207 0.13144 0 0.21769-0.04101 0.26172-0.11914l16.684-17.635z" color="#000000" fill="url(#linearGradient357-9)" style="-inkscape-stroke:none"/>
 </g>
-<g transform="translate(-35.746 -27.585)" stroke-linecap="round" stroke-linejoin="round">
+<g transform="translate(-35.746,-27.585)" stroke-linecap="round" stroke-linejoin="round">
 <path d="m-4.868-10.713 0.368 2.511 1.668-1.061z" fill="#7d7d7d"/>
 <g fill="#a3a3a3">
 <path d="m5.836-22.026-10.704 11.313 2.036 1.45 10.703-11.314z"/>
@@ -76,10 +73,6 @@
 </g>
 </g>
 </defs>
-
-<!-- First: Render with shadow -->
-<use xlink:href="#hammer-content" filter="url(#shadow)"/>
-
-<!-- Second: Render without shadow for crisp hammer, see https://gist.github.com/brillout/c9145f50a1ce33f63a57c78f7e4518b6 -->
-<use xlink:href="#hammer-content"/>
+<use transform="translate(-.087568 6)" filter="url(#shadow)" xlink:href="#hammer-content"/>
+<use transform="translate(-.087568 6)" xlink:href="#hammer-content"/>
 </svg>
